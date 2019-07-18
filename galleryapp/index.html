@@ -12,29 +12,48 @@
         
         
     }
+    h1,footer{
+      
+      font-family: 'Bonbon', cursive;
+    }
+    
     </style>
   </head>
-  <body background = "http://www.ie-wallpapers.com/data/out/68/37808066-doge-wallpaper.jpg">
+  <body background = "https://sites.google.com/site/aeefwichayada/_/rsrc/1424265543913/faem-sasm-phl-ngan/phun-hlang/%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%20copy.jpg">
       <div>
-        <h1>Gallery Application</h1>
+       
+        <center><h1>Gallery Application</h1></center>
+        <link href="https://fonts.googleapis.com/css?family=Bonbon&display=swap" rel="stylesheet">
 
 
       </div>
-    <div>
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.K">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Assist.Prof.Chayaporn">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.Tossaporn">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.Phaichayon">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.Woody">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Aj.Wasana">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.Paul">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Dr.Suphawadee">
-      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Aj.Wayo">
+      
+    <center><div>
+      <img class="avatar" src="https://pbs.twimg.com/media/BcLbbR2CYAEEeOx.jpg" alt="Dr.K" onclick="showPic(this.src)">
+      <img class="avatar" src="http://pangnews.co.kr/wp-content/uploads/2019/01/Dw95ycnVYAAgL83.jpg" alt="Assist.Prof.Chayaporn" onclick="showPic(this.src)">
+      <img class="avatar" src="https://data2.1freewallpapers.com/download/red-panda-lesser-panda-food.jpg" alt="Dr.Tossaporn" onclick="showPic(this.src)">
+      <img class="avatar" src="http://farm1.static.flickr.com/34/117674780_e1d3a2ad94.jpg" alt="Dr.Phaichayon" onclick="showPic(this.src)">
+      <img class="avatar" src="https://i.pinimg.com/originals/f4/9e/05/f49e0549f65b934d05513e8065ddd7f9.jpg" alt="Dr.Woody" onclick="showPic(this.src)">
+      <img class="avatar" src="https://pbs.twimg.com/profile_images/1066929032871071744/8IeST4P-_400x400.jpg" alt="Aj.Wasana" onclick="showPic(this.src)">
+      <img class="avatar" src="https://cdn.pixabay.com/photo/2017/10/19/16/57/red-panda-2868388_960_720.jpg" alt="Dr.Paul" onclick="showPic(this.src)">
+      <img class="avatar" src="https://i2.wp.com/4lapki.com/wp-content/uploads/2017/01/krasnaa-panda-6.jpg" alt="Dr.Suphawadee" onclick="showPic(this.src)">
+      <img class="avatar" src="https://www.thoughtco.com/thmb/DpVtY--UXVOtG68m9LhMY7be2w0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-red-panda-171399380-5b574325c9e77c005b690b41.jpg" alt="Aj.Wayo" onclick="showPic(this.src)">
     </div>
+    <div>
+      <img id = "main" class = "maik" src="" alt="" width="600" height="400">
+    </div>
+    <script>
+        function showPic(newsrc){
+        mainpic=document.getElementById("main");
+        mainpic.src=newsrc;
+        }
+        </script>
+    
     <footer>
       Node <script>document.write(process.versions.node)</script>,
       Chrome <script>document.write(process.versions.chrome)</script>,
       and Electron <script>document.write(process.versions.electron)</script>.
     </footer>
+    
   </body>
 </html>
